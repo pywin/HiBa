@@ -13,8 +13,8 @@ savePath = r'./Wave_sort/UBFC/'
 if not os.path.exists(savePath):
     os.makedirs(savePath)
 Idex_files = r'/home/xx/Data/STMap/STMap_Index/UBFC'
-gt_path = r'/home/xx/Code/M2022/TransRPPG/4T1_DIG_CON_Sv3_SaveSig/Result/rPPGNet_UBFCSpatial0.5Temporal0.1WAVE_ALL.mat'
-pr_path = r'/home/xx/Code/M2022/TransRPPG/4T1_DIG_CON_Sv3_SaveSig/Result/rPPGNet_UBFCSpatial0.5Temporal0.1WAVE_PR_ALL.mat'
+gt_path = r'xx_WAVE_ALL.mat'
+pr_path = r'xx_WAVE_PR_ALL.mat'
 pr = scio.loadmat(pr_path)['Wave']
 pr = np.squeeze(np.array(pr.astype('float32')))
 gt = scio.loadmat(gt_path)['Wave']
